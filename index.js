@@ -1,11 +1,15 @@
-console.log("hi team Mates");
+const dotenv = require("dotenv");
+dotenv.config();
+
+console.log("hi team Mates", process.env.server_name);
 
 const http = require('http');
 http.createServer((req,resp)=>{
-resp.writeHead(200,{'Content-Type':'application\json'});
+resp.writeHead(200,{'Content-Type':'text/html'});
 resp.write(JSON.stringify({name:"shalini mishra", email:"shamishra604@gmail.com"}));
+resp.write("<h1>Hello world</h1>");
 resp.end();
-}).listen(5000);
+}).listen(process.env.port);
 // echo "# Hiring-Platform" >> README.md
 // git init
 // git add README.md

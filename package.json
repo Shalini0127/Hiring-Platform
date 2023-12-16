@@ -1,0 +1,14 @@
+{
+  "name": "hiring-page",
+  "version": "1.0.0",
+  "description": "it is a hiring platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shalini mishra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
